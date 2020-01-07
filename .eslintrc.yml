@@ -1,57 +1,14 @@
 extends:
-  - google
+  - custrino
 env:
   browser: true
   es6: true
 globals:
   Atomics: readonly
   SharedArrayBuffer: readonly
-parser: '@typescript-eslint/parser'
+parser: "@typescript-eslint/parser"
 parserOptions:
   ecmaVersion: 2018
   sourceType: module
 plugins:
-  - '@typescript-eslint'
-rules:
-  no-eval: error # eval を許すな
-  no-implied-eval: error # e v a l  を 許 す な
-  no-script-url: error # e  v  a  l    を  許  す  な
-  no-var: error # var を許すな
-  no-new-func: error # new Function() を許すな
-  space-infix-ops: error # 演算子前後のスペース
-  space-unary-ops: error # ++ 1 等 単項演算子の前後のスペースを非許可
-  arrow-spacing: error # => 前後のスペース
-  keyword-spacing: error # if 等のキーワード前後のスペース
-  space-in-parens: error # ( name: string ) のスペースを非許可
-  no-new: error # 参照されない new の使用を非許可 new Date() 等
-  consistent-return: error # return あるんだから値は必ず返せ
-  dot-notation: error # プロパティを foo["bar"] で取得しようとするな
-  dot-location: [error, property] # プロパティの改行は foo \n .bar
-  eqeqeq: error # === or !== の使用を強制
-  no-alert: error # alert/confirm/prompt の使用を禁止
-  no-div-regex: error # 正規表現先頭の除算演算子を非許可
-  no-floating-decimal: error # 浮動小数点数を非許可
-  no-implicit-coercion: error # 暗黙の型変換を非許可
-  no-self-compare: error # 比較になってない比較を非許可
-  no-constant-condition: error # 条件になってない条件を非許可
-  no-useless-call: error # .call() とか使うな
-  no-useless-concat: error # 不要なリテラル連結を非許可
-  radix: error # parseInt の第二引数を強制
-  yoda: [error, never, { onlyEquality: true }] # フォースの力
-  comma-dangle: [error, never] # 最後のカンマを削除
-  no-cond-assign: error # 代入するな
-  no-duplicate-case: error # case の重複を非許可
-  no-empty-character-class: error # 文字セットに何も入ってないぞ
-  no-empty: error # ブロック内が未実装ぞ
-  no-ex-assign: error # エラー参照の上書きを非許可
-  no-extra-parens: error # いらない括弧
-  no-extra-semi: error # いらないセミコロン
-  require-jsdoc: off # JSDoc は無くてもいいよ
-  no-inner-declarations: error # ネスト内で関数宣言するな
-  no-sparse-arrays: error # 説明しにくい [,] を非許可
-  no-unreachable: error # 到達不可能なコードを非許可
-  no-lonely-if: error # 唯一の if を非許可
-  no-unneeded-ternary: error # 単純な分離を非許可
-  no-unused-vars: off # typescript 側で処理する
-  max-len: off # 自分で折ります
-  object-curly-spacing: off # {} のスペース
+  - "@typescript-eslint"
